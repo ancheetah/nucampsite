@@ -12,11 +12,15 @@ h2{
 header h2{
     color: #CEC8FF;
 }
+.navbar{
+    background-color: #901CAD;
+}
 footer{
     background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
 }
 .jumbotron{
+    margin: 0;
     padding: 30px;
     background-image: linear-gradient(to right, #5637DD, #3046C5, #601060);
     color: white;
