@@ -36,8 +36,13 @@
                     <h2>a better way to camp</h2>
                 </div>
 
+                <!-- Reserve Campsite Button with Tooltip -->
                 <div class="col-md-4 col-xl-2 mt-4">
-                	<a href="#reserveForm" class="text-nowrap"><button class="btn btn-info btn-lg">Reserve Campsite</button></a>
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip"
+                        data-placement="bottom" data-html="true"
+                        title="Or call us at <br/><strong>1-206-555-1234</strong>">
+                        Reserve Campsite
+                    </a>
                 </div>
 
             </div>
@@ -111,7 +116,8 @@
                 <div class="media">
                     <div class="media-body align-self-center">
                         <h3>React Lake Campground</h3>
-                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
+                            on the
                             shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
                     <img src="img/react-lake-thumb.jpg" alt="React Lake" class="img-thumbnail d-flex ml-3" />
@@ -169,7 +175,8 @@
                             <div class="row form-group">
                                 <label class="col-form-label col-sm-6" for="date">Date</label>
                                 <div class="col">
-                                    <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy">
+                                    <input class="form-control" type="date" id="date" name="date"
+                                        placeholder="mm/dd/yyyy">
                                 </div>
                             </div>
 
@@ -234,6 +241,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Tooltips -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 </body>
 
