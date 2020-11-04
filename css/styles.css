@@ -31,3 +31,11 @@ header h2 {
 
 header h2 {
   color: #CEC8FF; }
+
+#reserveModal .modal-header {
+  background: #17A2B8;
+  color: #ffffff; }
+
+#loginModal .modal-header {
+  background: #901CAD;
+  color: #ffffff; }
